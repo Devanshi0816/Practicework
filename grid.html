@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap: 10px ;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.box {
+    width:100px ;
+    height:100px;
+    border: 1px solid black ;
+}
+
+.box:nth-child(1){
+grid-row-start: 1;
+grid-row-end:4 ;
+height: 322px;
+background-color: rgb(155, 78, 226);
+}
+
+
+.box:nth-child(2){
+grid-column-start:2 ;
+grid-column-end:4 ;
+width: 211px;
+background-color: rgb(155, 78, 226);
+}
+
+.box:nth-child(6){
+    grid-column-start: 4;
+    grid-column-end:5 ;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: 211px;
+    background-color: rgb(155, 78, 226);
+}
+
+.box:nth-child(3){background-color: rgb(64, 20, 146);}
+
+.box:nth-child(4){background-color: rgb(64, 20, 146);}
+
+.box:nth-child(5){background-color: rgb(64, 20, 146);}
+
+.box:nth-child(7){background-color: rgb(64, 20, 146);}
+
+.box:nth-child(8){background-color: rgb(64, 20, 146);}
+
+    </style>
+</head>
+<body>
+
+  <div class="main">
+
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    
+    </div>
+    
+</body>
+</html>
