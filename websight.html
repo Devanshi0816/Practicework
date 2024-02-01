@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hireup-template</title>
+
+
+    <style>
+
+
+.navbar {
+  width: 1300px;
+  background-color: #ffffff;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.midnavbar {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.left{
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+}
+
+.right{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    
+}
+
+.right > button{
+
+  background-color: blue;
+  padding: 3px;
+  color: white;
+  width: 100px;
+  border: #9e9e9e50 solid ;
+ 
+  
+}
+
+.middle{ 
+
+  display: block;
+  justify-content: left;
+}
+ 
+.section-header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-regular {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1140px;
+    margin: 50px;
+    padding: 35px;
+}
+#head2{
+  grid-column-start: span 1;
+    
+    grid-column-end: span 1;
+    
+    grid-row-start: span 1;
+    
+    grid-row-end: span 1;
+}
+
+.second{
+  margin: 60px;
+  padding: 40px;
+}
+
+.third-header{
+
+  background-image: url(skyline.jpg);
+  margin: 60px;
+  width: 1200px ;
+  height: 700px;
+  
+}
+.searchbar{
+
+    border: #979797ce 0.5px solid;
+    width: 650px;
+    height: 75px;
+     background-color: white;
+}
+.searchbar > button{
+  background-color: blue;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  width: 80px;
+  border: #9e9e9e50 solid ;
+  
+}
+.third{
+  text-align: center;
+  border: #979797ce;
+  background-color: #979797ce;
+
+}
+.third-logo {
+  margin: 30px;
+  padding: 35px;
+  justify-content: space-around;
+  display: flex;
+
+}
+
+.forth-header {
+
+  width: 100%;
+  max-width: 1140px;
+  margin: 50px;
+  padding: 25px;
+  font-size: 18px;
+  
+
+}
+.forth-header > button{
+
+  background-color: blue;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  width: 100px;
+  margin-left: 1000px;
+  border: #9e9e9e50 solid ;
+  
+}
+.forth-main{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    gap: 20px ;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 55px;
+    
+}
+
+.box {
+    justify-content: center;
+    margin: 5px;
+    width:350px ;
+    height:250px;
+    border: 1px solid rgba(121, 121, 121, 0.322) ;
+    padding: 20px; 
+}
+
+.box > button{
+
+  gap: 30px;
+  position: relative;
+  text-align: left;
+  
+}
+
+.icon{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ebebef;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    padding: 5px;
+    
+}
+
+.fifth-header{
+
+  
+  margin: 50px;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.fifth-main{
+
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap: 20px ;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 55px;
+}
+
+
+.box1{
+    
+    margin: 5px;
+    width:250px ;
+    height:250px;
+    border: 1px solid rgba(121, 121, 121, 0.322) ;
+    padding: 20px; 
+}
+
+.image{
+  max-width: 25px;
+    max-height:15px;
+    float: left;
+}
+
+
+.text{
+    font-size: 20px;
+    padding-left: 35px;
+    padding-top: 10px;
+    float: left;
+}
+.six-header{
+
+  display: flex;
+  margin: 50px;
+  padding: 10px;
+  margin-left: 80px;
+}
+
+.six {
+  margin: 40px;
+  padding: 25px;
+}
+
+.seven-header{
+  justify-content: center;
+  text-align: center;
+  margin-top: 80px;
+
+}
+.seven1 {
+  text-align: left;
+  margin-left: 150px;
+  padding: 100px;
+  margin-top: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+
+  width: 1500px;
+  margin-left: 30px;
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 5px;
+}
+
+table button{
+  background-color: blue;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  width: 100px;
+  border: #9e9e9e50 solid ;
+  
+}
+
+
+/*
+.header-content {
+ 
+    justify-content: center;
+    display: flex;
+    max-width: 559px;  
+    align-items: flex-start;
+}
+.header-badge {
+
+    display: flex;
+    margin-bottom: 24px;
+    padding: 8px 16px 8px 8px;
+    align-items: center;
+    grid-column-gap: 12px;
+    border-radius: 0px;
+    background-color: #f9f9fb;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.header-badge-light {
+    padding: 4px 8px;
+    border-radius: 0px;
+    background-color: #fff;
+    color: #443fde;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    
+  
+}
+*/
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+      <div class="left" >
+        <img src="hireup.jpeg" alt=""/>
+        
+        </div>
+        <div class="midnavbar">
+        <a >Home</a> 
+        <a>Compnay</a>
+        <a>Browse</a>
+        <a>Blog</a>
+        </div>
+     
+      <div class="right">
+        <a > Post a Job</a>
+        <button type="submit" style="width: 80px; height: 25px;" > Log In</button>
+      </div>
+      </div>
+     
+      
+
+      <div class="section-header">
+        <div class="container-regular">
+          <p><b style="color: blue;">NEW</b> Stay connected to get upcoming jobs</p>
+          <h1>Find the most <br>exciting jobs in tech</h1>
+                    
+                </div>
+
+
+                <div class="second">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et. <a href="/log-in">Sign in</a>
+                    or <a href="/sign-up">sign up</a>
+                    to get started!
+                </p>
+                </div>
+            </div>
+      
+               
+          
+
+            <div class="third-header">
+              <div class="searchbar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search..." name="Search" style="height: 30px;width:450px ">
+              <button type="submit" >Search</button>
+              </div>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <div class="third">
+                <p>Work for industry leading global companies</p>
+              </div>
+              </div>
+              <div class="third-logo">
+                <img src="img1.svg" alt="image"/>
+                <img src="img2.svg" alt=""/>
+                <img src="img3.svg" alt=""/>
+                <img src="img4.svg" alt=""/>
+                <img src="img5.svg" alt=""/>
+                <img src="img6.svg" alt=""/>
+              
+              </div>
+            
+
+           
+
+            <div class="forth-header">
+              <h1>Explore the latest job openings</h1>
+              <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus,<br> 
+                  pharetra leo et, efficitur tortor. Fusce vel convallis magna.
+              </p>
+              <button type="submit"> See All Jobs</button>
+          
+            <div class="forth-main">
+            <div class="box"> 
+              
+              <img src="Dribble Icon.svg" alt="" class="icon" style="margin: 0 auto;">
+              
+               Dribble 
+              <p style="font-size: 15px;" >October 25,2022 </p>
+              <h4 style="text-align: left;">Frontend Developer</h4>
+              <button type="submit">Marketing</button>
+              <button type="submit">Part Time</button><br>
+              <button type="submit">
+              <i class="fa-solid fa-location-dot"> </i> San Antonia
+              </button>
+              <button type="submit">
+              <i class="fa-solid fa-coins"></i> $ 130k-160k
+              </button>
+              
+            </div>
+            <div class="box"> 
+              <img src="Dribble Icon.svg" alt="" class="icon"  style="margin: 0 auto;">
+              Dribble
+              <p style="font-size: 15px;">October 25,2022</p>
+              <h4 style="text-align: left;">Backend Developer</h4>
+              <button type="submit">Design</button>
+              <button type="submit">Full Time</button><br>
+              <button type="submit">
+                <i class="fa-solid fa-location-dot"> </i> Dallas
+                </button>
+                <button type="submit">
+                <i class="fa-solid fa-coins"></i> $ 50k-70k
+                </button>
+              
+            </div>
+            <div class="box">
+              <img src="TokoPedia Icon.svg" alt="" class="icon" style="margin: 0 auto;">
+              Tokopedia
+              <p style="font-size: 15px;">March 20,2021</p>
+              <h4 style="text-align: left;">Scrum Master</h4>
+              <button type="submit">Marketing</button>
+              <button type="submit">Part Time</button><br>
+              <button type="submit">
+                <i class="fa-solid fa-location-dot"> </i> San Antonia
+                </button>
+                <button type="submit">
+                <i class="fa-solid fa-coins"></i> $ 130k-160k
+                </button>
+            </div>
+            <div class="box">
+              <img src="Facebook Icon.svg" alt="" class="icon" style="margin: 0 auto;">
+              Facebook
+              <p style="font-size: 15px;">March 30,2021</p>
+              <h4 style="text-align: left;">Lead Technical Architect</h4>
+              <button type="submit">Technology</button>
+              <button type="submit">Full Time</button><br>
+              <button type="submit">
+                <i class="fa-solid fa-location-dot"> </i> Melbourne
+                </button>
+                <button type="submit">
+                <i class="fa-solid fa-coins"></i> $ 210k-240k
+                </button>
+            </div>
+            <div class="box">
+              <img src="Spotify Icon.svg" alt="" class="icon" style="margin: 0 auto;">
+              Spotify
+              <p style="font-size: 15px;">March 30,2021</p>
+              <h4 style="text-align: left;">Digital Media Strategist</h4>
+              <button type="submit">Business</button>
+              <button type="submit">Casual</button><br>
+              <button type="submit">
+                <i class="fa-solid fa-location-dot"> </i> New York
+                </button>
+                <button type="submit">
+                <i class="fa-solid fa-coins"></i> $ 50k-70k
+                </button>
+            </div>
+            <div class="box">
+              <img src="PayPal Icon.svg" alt="" class="icon" style="margin: 0 auto;">
+              Paypal
+              <p style="font-size: 15px;">March 30,2021</p>
+              <h4 style="text-align: left;">Systems Administrator</h4>
+              <button type="submit">Business</button>
+              <button type="submit">Casual</button><br>
+              <button type="submit" >
+                <i class="fa-solid fa-location-dot"> </i> California
+                </button>
+                <button type="submit">
+                <i class="fa-solid fa-coins"></i> $ 40k-50k
+                </button>
+            </div>
+            </div>
+            </div>
+           
+
+            <div class="fifth-header">
+              <h1>Work with exciting companies</h1>
+              <p> Discover more than 1,600 open positions</p>
+              <button style="margin: 10px;">
+                <i class="fa-solid fa-arrow-left" ></i>
+              </button>
+              <button>
+                <i class="fa-solid fa-arrow-right" ></i>
+              </button>
+              
+              <div class="fifth-main">
+              
+              <div class="box1">
+                <div class="image">
+                <img src="Dribble Icon.svg" alt="" class="icon">
+               </div> 
+              <div class="text"> Dribble </div>
+              <br><br>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus at dui mollis
+                  metus gravida tristique.
+                </p>
+                
+                 65 Employees 
+                
+              </div>
+              <div class="box1">
+                <div class="image">
+                <img src="PayPal Icon.svg" alt="" class="icon">
+                </div>
+                <div class="text">Pay Pal</div>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus at dui mollis
+                  metus gravida tristique.
+                </p>
+                6000 Employees
+              </div>
+              <div class="box1">
+                <div class="image">
+                <img src="Spotify Icon.svg" alt="" class="icon">
+                </div>
+                <div class="text">Spotify</div>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus at dui mollis
+                  metus gravida tristique.
+                </p>
+                2000 Employees
+              </div>
+              <div class="box1">
+                <div class="image">
+                <img src="Slack Icon.svg" alt="" class="icon">
+                </div>
+                <div class="text">Slack</div>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus at dui mollis
+                  metus gravida tristique.
+                </p>
+                 400 Employees
+              </div>
+               <!--<div class="box1">
+                <div class="image">
+                <img src="Facebook Icon.svg" alt="" class="icon">
+                </div>
+                <div class="text">Facebook</div>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Vivamus at dui mollis
+                  metus gravida tristique.
+                </p>
+                3000 Employees
+              </div> -->
+              
+              </div>
+            </div>
+           
+
+            <div class="six-header">
+              <div>
+                <img src="Feature Image.webp" alt=""  style="height: 600px; width: 550px;"/>
+              </div>
+              <div class="six">
+              <h3>WHY CHOOSE US </h3>
+              <h1 >Build a custom membership <br>site with locked content. </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi <br> rhoncus, pharetra leo et, efficitur tortor.
+              Fusce vel convallis magna, sit <br> amet pulvinar diam. Sed laoreet feugiat consequat.
+              </p>
+              <p style="font-size: 18px; border: #979797ce solid; height: 75px ; width: 500px; padding: 18px; "> 
+              <i class="fa-solid fa-users" style="height: 25px; width: 25px; padding:auto; "></i>
+              Add a feature point here<br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p style="font-size: 18px; border: #979797ce solid; height: 75px ; width: 500px; padding: 18px; "> 
+                <i class="fa-solid fa-users" style="height: 25px; width: 25p; padding:auto; "></i>
+                Add a feature point here<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <p style="font-size: 18px; border: #979797ce solid; height: 75px ; width: 500px; padding: 18px; "> 
+                  <i class="fa-solid fa-users" style="height: 25px; width: 25px; padding:auto; "></i>
+                  Add a feature point here<br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+              </div>
+            </div>
+            
+
+            <div class="seven-header">
+              <div>
+                TESTIMONIAL
+                <h1>See what ueser say about <br>
+                  our job plat form </h1>
+
+              </div>
+              <div class="seven1">
+                <img src="Mail Chimp Icon.svg" alt="" />
+                <p style="font-size: 20px; margin-top: 30px;">“Lorem ipsum dolor sit amet, <br>
+                   consectetur adipiscing elit. Sed a mi<br>
+                   rhoncus, pharetra leo et, efficitur tortor. <br>
+                   Fusce vel convallis magna”</p>
+
+                  <p>
+                    David Sinclair - Senior Frontend Developer</p>
+
+                    <button type="button" style="margin: 10px;" >
+                      <i class="fa-solid fa-arrow-left" class="left-arrow"></i>
+                    </button>
+                    <button type="button" >
+                      <i class="fa-solid fa-arrow-right" class="right-arrow"></i>
+                    </button>
+
+                    <img src="men.jpg" alt="" style="height: 500px; width: 380px; margin-left: 500px;margin-right: 70px; 
+                    margin-top: -300px;"/>
+
+              </div>
+              
+          
+              
+              <div>
+
+              </div>
+            </div>
+           
+
+  <footer>
+    <div>
+      <img src="hireup.jpeg" alt="" style="margin: 20px;">
+    </div>
+    
+    <table >
+    
+      <tr>
+        <th>PAGES</th>
+        <th>ACCOUNT</th>
+        <th>TEMPLATE</th>
+        <th>SIGN UP TO OUR NEWSLETTER</th>
+      </tr>
+
+      <tr>
+        <td>Home</td>
+        <td>Sign In</td>
+        <td>Style Guide</td>
+        <td><input type="text" placeholder="Email Address" name="Search" style="height: 30px;width:400px ">
+          <button type="submit" >Get Search</button></td>
+      </tr>
+
+      <tr>
+        <td>Home V2</td>
+        <td>Sign up</td>
+        <td> License</td>
+      </tr>
+
+      <tr>
+        <td>About</td>
+        <td>Reset Password</td>
+        <td>Changelog</td>
+      </tr>
+
+       <tr>
+        <td>Pricing</td>
+        <td>User Account</td>
+       </tr>
+
+       <tr>
+        <td>Jobs</td>  
+       </tr>
+
+       <tr>
+        <td>Post a Job</td>
+       </tr>
+
+      </table>
+  
+
+  </footer>
+
+
+
+
+
+
+</body>
+</html> 
