@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            height: fit-content;
+            width: fit-content;
+            border: 1px solid black;
+            display: flex;
+            gap: 25px;
+            padding: 25px;
+
+        }
+
+        .circle{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+            background-color: darkviolet;
+            transition: all 1s;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="circle" onmouseover="Circle1()" onmouseout="mouse1()"  id="small"></div>
+        <div class="circle" onmouseover="Circle2()" onmouseout=" mouse2()" id="small1"></div>
+    </div>
+      
+   
+    
+</body>
+
+<script>
+function Circle1(){
+    document.getElementById('small').style.transform="scale(0.2)"
+    document.getElementById('small1').style.transform="scale(1.2)"
+}
+
+function Circle2(){
+    document.getElementById('small').style.transform="scale(1.2)"
+    document.getElementById('small1').style.transform="scale(0.2)"
+}
+
+function mouse1 () {
+    document.getElementById('small').style.backgroundColor="yellow"
+    document.getElementById('small1').style.backgroundColor="yellow"
+}
+
+function mouse2 () {
+    document.getElementById('small').style.backgroundColor="green"
+    document.getElementById('small1').style.backgroundColor="green"
+}
+</script>
+</html>
